@@ -7,6 +7,11 @@ public class Alumno {
 	private String nombre;
 	private int edad;
 
+	
+	public Alumno(String nombre) {
+		this.nombre = nombre;
+		
+	}
 	// Constructor
 	public Alumno(String nombre, int edad) {
 		this.nombre = nombre;
@@ -38,4 +43,10 @@ public class Alumno {
 		Alumno other = (Alumno) obj;
 		return edad == other.edad && Objects.equals(nombre, other.nombre);
 	}
+
+	@Override
+	public String toString() {
+		return "Alumno [nombre=" + nombre + ", edad=" + edad + "]";
+	}
+	
 }
