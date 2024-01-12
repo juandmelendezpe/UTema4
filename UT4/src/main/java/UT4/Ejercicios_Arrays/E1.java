@@ -1,22 +1,39 @@
 package UT4.Ejercicios_Arrays;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class E1 {
 
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		// CREACION DE VARIABLES Y DECLARACION DEL ARRAY
+		// INGRESA UN NUMERO DEL 1 AL 20 Y VERIFICA CUANTAS VECES SE REPITE
+		Scanner sc = new Scanner(System.in);
 		
-		int[] numeros = {1,2,5,8,5,2,7,6,2,5,8,5};
+		int numerointro;
+		int contador = 0;
 		
+		int[] numeros = { 1, 2,10, 2, 4, 5, 6, 7, 2, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 		
-		
-		Random r = new Random();
-		
-		
-		for(int i = 0; i < numeros.length;i++) 
-			System.out.println("posicion : " + i +"--- valor : " + numeros[i]);
+		// EJERCICIO--en este ejercicio se pide un numero y se filtra que sea del 1 al 20, y 
+		// si es correcto recorre el bucle for con al condicion que el numero
+		// ingresado sea comparado en el recorrido y guardara como contador++ de  ese numero >
+		//  al final se imprime cuantas veces se ha encontrado el numero en el array
+		do {
+			System.out.println("introduce el numero que quieres comprobar: ");
+			numerointro = sc.nextInt();
+		} while (numerointro < 1 || numerointro > 20);
+
+		for (int i = 0; i < numeros.length; i++) {
+			if (numerointro == numeros[i]) {
+				contador++;
+			}
 		}
+		System.out.println("el numero introducido se repite: " + contador + " veces");
+		sc.close ();
+	}
 		
 	}
 
