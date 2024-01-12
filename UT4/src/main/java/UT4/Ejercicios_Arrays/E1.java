@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class E1 {
 
-
 	public static void main(String[] args) {
 
 		// CREACION DE VARIABLES Y DECLARACION DEL ARRAY
@@ -31,10 +30,8 @@ public class E1 {
 				contador++;
 			}
 		}
-		System.out.println("el numero introducido se repite: " + contador + " veces");
+		System.out.println("el numero introducido se repite: " + contador + " --> veces");
 		sc.close ();
 	}
 		
 	}
-
-
