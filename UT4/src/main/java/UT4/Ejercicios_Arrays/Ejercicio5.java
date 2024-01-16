@@ -3,12 +3,12 @@ import java.util.Random;
 
 public class Ejercicio5 {
 	
-	private static final int TAM = 50;
+	private static final int Total_de_elementos = 50;
 	private static final int LIM = 100;
 	
 	public static void main(String[] args) {
 				
-		int[] numeros = new int[TAM]; 
+		int[] numeros = new int[Total_de_elementos]; 
 		
 		Random r = new Random();
 		
