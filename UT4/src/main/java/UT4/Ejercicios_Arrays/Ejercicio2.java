@@ -17,7 +17,7 @@ public class Ejercicio2 {
 				break;
 			}
 		}
-		
+		System.out.println( datos);
 		System.out.println(ordenado ? "Está ordenado." : "NO está ordenado.");
 		
 	}

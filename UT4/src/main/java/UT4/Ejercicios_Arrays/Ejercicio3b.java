@@ -23,15 +23,18 @@ public static void main(String[] args) {
 				posMayor = j;
 			}
 		}
-		
 		indices[i] = posMayor;
 		aux[posMayor] = Integer.MIN_VALUE;
 	}
 	
+	System.out.println("array listado ");
+	for(int i = 0; i < numero.length; i++) {
+		System.out.println(i+ "-" + numero[i]);
+		
+	}
 	mostrarArray(numero, "Array original");
 	mostrarArray(indices, "Array de índices");
 }
-
 public static void mostrarArray(int[] arr, String info) {
 	System.out.println(info);
 	for(int item: arr) {
@@ -39,5 +42,4 @@ public static void mostrarArray(int[] arr, String info) {
 	}
 	System.out.println();
 }
-
 }

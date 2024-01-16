@@ -23,7 +23,8 @@ public class Ejercicio3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("*******************************************************");
 
-		System.out.println("Introduzca el nombre de la persona a buscar: ");
+		 System.out.println("Introduzca el nombre de la persona a buscar: ");
+		 
 		String nombreBuscar = sc.nextLine();
 		sc.close();
 		
@@ -32,9 +33,11 @@ public class Ejercicio3 {
 				
 				System.out.println("Su Nombre es: " + agenda[i].getNombre());
 				System.out.println("Su edad es: " + agenda[i].getedad());
-				System.out.println("*******************************************************");
-}
-}
+
+
+			}
+		}
+		
 }
 }
 		
