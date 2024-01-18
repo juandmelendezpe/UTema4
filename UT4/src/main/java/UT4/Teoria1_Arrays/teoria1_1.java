@@ -7,7 +7,7 @@ public class teoria1_1 {
 		// tienes que crear el array  - 
 		String [] paises = new String[8];
 		// recorres el array -  en esta ejemplo pides que sea ingresado por pantalla
-		for (int i = 0 ; i < 8 ; i++) {
+		for (int i = 0 ; i < 3 ; i++) {
 			paises [i] = JOptionPane.showInputDialog("INTRODUCE PAIS" + ( i+ 1));
 			
 		}

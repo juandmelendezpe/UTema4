@@ -3,14 +3,27 @@ import java.util.Random;
 
 public class Ejercicio7 {
 	
+	/**
+	 *  DECLARACION DE VARIBLES FINAL 
+	 */
+	
 	private static final int TAM = 3;
-	private static final int LIM = 10;
+	private static final int LIM = 5;
 	private static final int VERTICAL = 0;
 	private static final int HORIZONTAL = 1;
 	
 	public static void main(String[] args) {
+		
+		/**
+		 * DECLARICION DE LA MATRIZ 
+		 */
 				
 		int[][] mat = new int[TAM][TAM];
+		
+		
+		/**
+		 * llamada de metodos
+		 */
 		
 		rellenaMatriz(mat);
 		
@@ -18,10 +31,11 @@ public class Ejercicio7 {
 		
 		
 		int[] sumaFilas = calculaSumaFilas(mat);
-		mostrarArray(sumaFilas, "Array filas", VERTICAL);
+		
+		mostrarArray(sumaFilas, "Array de suma x filas", VERTICAL);
 		
 		int[] sumaColumnas = calculaSumaColumnas(mat);
-		mostrarArray(sumaColumnas, "Array columnas", HORIZONTAL);
+		mostrarArray(sumaColumnas, "Array de suma x columnas",HORIZONTAL);
 		
 	}
 	
@@ -32,7 +46,7 @@ public class Ejercicio7 {
 				suma[i] += mat[j][i];
 			}
 		}
-		return suma;
+		return  suma;
 	}
 
 	private static int[] calculaSumaFilas(int[][] mat) {

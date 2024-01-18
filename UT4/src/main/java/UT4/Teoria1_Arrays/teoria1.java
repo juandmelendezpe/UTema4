@@ -8,13 +8,13 @@ public class teoria1 {
 		 * se recorre con for y el .legth sirve para almacenar el tamaño del  array  {4,9,7,5,10}
 		 * con el println se muestra el recorrido
 		 * */
-		
+		int []notas2 = new int [5];
 		int []notas = {4,9,7,5,10};
 		for(int i =0;i< notas.length ;i++)
 			
-			System.out.println("notas["+i + "] es " + notas[i]);
+			System.out.println("nota["+i + "] es " + notas[i]);
 		 	
-			System.out.println();
+			System.out.println();// salto de linea
 	
 	
 		String [] Ciudad = {"Avila", "Salamanca","Valladolid"};

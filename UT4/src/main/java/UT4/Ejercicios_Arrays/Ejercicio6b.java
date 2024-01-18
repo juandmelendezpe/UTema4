@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 public class Ejercicio6b {
 
-	private static final int TAM = 10;
-	private static final int NUM_DIAGONAL = 7;
-	private static final int NUM_RELLENO = 8;
+	private static final int TAM = 5;
+	private static final int NUM_DIAGONAL = 2;
+	private static final int NUM_RELLENO = 0;
 	
 	public static void main(String[] args) {
 				

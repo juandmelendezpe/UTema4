@@ -13,9 +13,10 @@ public class Ejercicio9 {
 		int[] array_B= new int[TAM];
 		boolean ordenado = true;
 		rellenaMatriz(array_A);
-		mostrarMatriz(array_A, "Array A");
+		mostrarMatriz(array_A, "Array A : ");
 		rellenaMatriz(array_B);
-		mostrarMatrizB(array_B, "Array B");
+		mostrarMatrizB(array_B, "Array B : ");
+		
 		
 	//concatenar arrays	
 	int lenArray1 = array_A.length;
@@ -26,6 +27,7 @@ public class Ejercicio9 {
 	System.arraycopy(array_B, 0, concate, lenArray1, lenArray2);  
 	System.out.print("Array C: " + Arrays.toString(concate)); 
 	
+	
 	//verificar si esta ordenado
 	for (int i = 1; i < concate.length; i++) {
 		if(concate[i] < concate[i-1]) {
@@ -35,6 +37,8 @@ public class Ejercicio9 {
 	System.out.println(ordenado ? "Está ordenado." : "NO está ordenado.");
 	}
 }
+	
+	
 private static void rellenaMatriz(int[] array_A) {
 	Random r = new Random();
 	for (int i = 0; i < array_A.length; i++) {
@@ -45,7 +49,7 @@ private static void rellenaMatriz(int[] array_A) {
 public static void mostrarMatriz(int[] arr, String info) {
 	System.out.println(info);
 	for (int fila : arr) {
-			System.out.print( fila +",");
+			System.out.println( fila +",");
 	}
 	System.out.println();
 	}
@@ -57,4 +61,7 @@ public static void mostrarMatrizB(int[] arr, String info) {
 	}
 	System.out.println();
 }
+
+
+
 }

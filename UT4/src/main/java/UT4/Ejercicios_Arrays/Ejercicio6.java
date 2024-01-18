@@ -2,18 +2,19 @@ package UT4.Ejercicios_Arrays;
 
 public class Ejercicio6 {
 private static final int TAM = 5;
+	private static final int NUMERO_DIAGONAL = 1;
 	public static void main(String[] args) {
 				
 		int[][] mat = new int[TAM][TAM];
 		
 		
 		mostrarArray(mat, "Original");
+		
 		for (int i = 0; i < mat.length; i++) {
-			mat[i][i] = 1;
+			mat[i][i] = NUMERO_DIAGONAL;
 		}
 		mostrarArray(mat, "Modificado");
-	
-		}
+	}
 
 	public static void mostrarArray(int[][] mat, String info) {
 		System.out.println(info);
@@ -22,7 +23,7 @@ private static final int TAM = 5;
 				System.out.print(mat[i][j]+ " ");
 			}
 			System.out.println();
-			
+		
 		}		
 	}
 }
