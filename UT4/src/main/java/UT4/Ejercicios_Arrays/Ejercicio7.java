@@ -41,6 +41,7 @@ public class Ejercicio7 {
 	
 	private static int[] calculaSumaColumnas(int[][] mat) {
 		int[] suma = new int[mat[0].length];
+		
 		for (int i = 0; i < mat[0].length; i++) {
 			for (int j = 0; j < mat.length; j++) {
 				suma[i] += mat[j][i];

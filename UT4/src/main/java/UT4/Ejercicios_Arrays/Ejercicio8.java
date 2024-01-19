@@ -8,17 +8,15 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 
-		int[][] mat = new int[TAM][TAM];
+		//int[][] mat = new int[TAM][TAM];
 
-		/*int mat[][] = { 
-				{ 15, 8, 1, 24, 17 }, 
-				{ 16, 14, 7, 5, 23 }, 
-				{ 22, 20, 13, 6, 4 }, 
-				{ 3, 21, 19, 12, 10 },
-				{ 9, 2, 25, 18, 11 } 
-				};*/
+		int mat[][] = { 
+				{ 2, 2, 2 }, 
+				{ 2, 2, 2 }, 
+				{ 2, 2, 2 } 
+				};
 
-		rellenaMatriz(mat);
+		//rellenaMatriz(mat);
 
 		mostrarMatriz(mat, "Matriz original");
 
@@ -37,8 +35,7 @@ public class Ejercicio8 {
 
 	}
 
-	private static boolean isCuadradoMagico(int[] sumaFilas, int[] sumaColumnas, int diagonalPrincipal,
-			int diagonalSecundaria) {
+	private static boolean isCuadradoMagico(int[] sumaFilas, int[] sumaColumnas, int diagonalPrincipal,int diagonalSecundaria) {
 		boolean isMagico = true;
 		if(diagonalPrincipal == diagonalSecundaria) {
 			for (int i = 0; i < sumaColumnas.length; i++) {
@@ -98,15 +95,17 @@ public class Ejercicio8 {
 		return suma;
 	}
 
-	private static void rellenaMatriz(int[][] mat) {
-		Random r = new Random();
+	/** private static void rellenaMatriz(int[][] mat) {
+		//Random r = new Random();
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
-				mat[i][j] = r.nextInt(LIM);
+				//mat[i][j] = r.nextInt(LIM);
+
+				
 			}
 		}
 	}
-
+*/
 	public static void mostrarMatriz(int[][] arr, String info) {
 		System.out.println(info);
 		for (int[] fila : arr) {
