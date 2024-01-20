@@ -51,7 +51,7 @@ public class Ejercicio7 {
 	}
 
 	private static int[] calculaSumaFilas(int[][] mat) {
-		int[] suma = new int [mat.length];
+		int[] suma = new int [mat[0].length];
 		for (int i = 0; i < mat[0].length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 				suma[i] += mat[i][j];

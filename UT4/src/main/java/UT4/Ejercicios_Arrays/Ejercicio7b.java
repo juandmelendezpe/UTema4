@@ -34,8 +34,8 @@ public class Ejercicio7b {
 		// TODO Auto-generated method stub
 		int [] ArraySuma = new int [mat[0].length];
 		
-		for(int y = 0; y < mat.length; y++) {
-			for ( int x =0 ; x < mat[x].length; x++) {
+		for(int y = 0; y < mat[0].length; y++) {
+			for ( int x =0 ; x < mat[0].length; x++) {
 				ArraySuma[y]+= mat[y][x] +i;
 			}
 		}
