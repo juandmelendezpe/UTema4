@@ -10,11 +10,7 @@ public class Ejercicio8 {
 
 		//int[][] mat = new int[TAM][TAM];
 
-		int mat[][] = { 
-				{ 2, 2, 2 }, 
-				{ 2, 2, 2 }, 
-				{ 2, 2, 2 } 
-				};
+		int mat[][] = { { 2, 2, 2 }, { 2, 2, 2 }, { 2, 2, 2 }};
 
 		//rellenaMatriz(mat);
 
