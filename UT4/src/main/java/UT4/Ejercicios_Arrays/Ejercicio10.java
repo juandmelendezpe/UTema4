@@ -14,7 +14,7 @@ private static final int TAM = 5;
 		for (int i = 0; i < mat.length; i++) {
 			
 			for(int j = 0; j < mat.length ; j++)
-			mat[j][i] = 4;
+			mat[j][i] = mat.length;
 			
 		}
 		mostrarArray(mat, "Relleno");

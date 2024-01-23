@@ -21,7 +21,7 @@ public class Ejercicio9 {
 	//concatenar arrays	
 	int lenArray1 = array_A.length;
 	int lenArray2 = array_B.length;
-	int[] concate = new int[lenArray1 + lenArray2];{
+	int[] concate = new int[lenArray1 + lenArray2];
 		
 	System.arraycopy(array_A, 0, concate, 0, lenArray1);  
 	System.arraycopy(array_B, 0, concate, lenArray1, lenArray2);  
@@ -36,7 +36,7 @@ public class Ejercicio9 {
 	}
 	System.out.println(ordenado ? "Está ordenado." : "NO está ordenado.");
 	}
-}
+
 	
 	
 private static void rellenaMatriz(int[] array_A) {
