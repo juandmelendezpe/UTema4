@@ -7,20 +7,20 @@ public class Ejercicio5 {
 	private static final int LIM = 100;
 	
 	public static void main(String[] args) {
-				
+		// CREAR ARRAY 		
 		int[] numeros = new int[Total_de_elementos]; 
 		
 		Random r = new Random();
-		
+		// RELLENAR ARRAY
 		for (int i = 0; i < numeros.length; i++) {
 			numeros[i] = r.nextInt(LIM) + 1;
 		}
-		
+		// utilizar metodo para mostrar array
 		mostrarArray(numeros, "Array numeros: ");
 		//mostrarArray(indices, "Array de índices");
 		
 		System.out.println("Faltan los siguientes números: ");
-		
+		// SE RECORRE ARRAY , COMPARANDO CADA ELEMENTO -- 
 		for (int i = 1; i <= LIM; i++) {
 			boolean encontrado = false;
 			for (int j = 0; j < numeros.length; j++) {
@@ -43,26 +43,3 @@ public class Ejercicio5 {
 		System.out.println();
 	}
 }
-/*	//juan estaba intentando dearrollar el ejercicio
-	Scanner sc = new Scanner(System.in);
-	int[] datos = new int[50];
-	Random r = new Random();
-	for (int i = 0;  i < datos.length ; i++) {
-		datos[i] = r.nextInt(100);
-	}
-	
-	System.out.println("Contenido del array: ");		
-	for(int elem: datos) {
-		System.out.print(elem + " ");
-	}
-	int contador =0;
-	
-	int[] num = new int[datos.length];
-	int[]aux = new int [datos.length];
-	
-	for (int j = 0; j < datos.length; j++) {
-		aux[j] = datos[j];
-	
-}
-}
-}**/
